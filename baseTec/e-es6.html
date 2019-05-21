@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<script src="./es6.js"></script>
+<script src="./es5/es6.js"></script>
+
+<body>
+  <p>
+    1.可以直接使用cli命令</br>
+    babel-cli</br>
+    npm install -g babel-cli</br>
+    npm install babel-cli --save-dev -g, 属于开发依赖
+  </p>
+  <p>
+    2.Babel支持很多语法的转码，比如我们想要将ES6转换成ES5，那么需要安装babel-preset-es2015包，如果我们想要编译React源码，就需要安装babel-preset-react，这里我们需要安装babel-preset-es2015
+    </br>npm install babel-preset-es2015 --save-dev
+  </p>
+  <p>
+    3.babel baseTec/es6.js --out-file baseTec/es5/es6.js --presets es2015
+  </p>
+  <p>
+    4.也可以编译整个目录的源文件，只需指定“–out-dir”参数即可
+  </p>
+  <p>
+    5.直接配置到npm scripts中, 见命令: es6Toes5
+  </p>
+  <p>
+    6.<a href="https://blog.csdn.net/liuhe688/article/details/51212393">实时刷新页面: gulp</a>
+  </p>
+  <p>
+    7.<a href="https://blog.csdn.net/liuhe688/article/details/51212393">实时刷新页面: webpack</a>
+  </p>
+  <p></p>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <p>此次先使用inferno接入, 后续在接入react/angular/vue等</p>
+  <p>
+    1.inferno 与 react 差异</br>
+    <ul>
+      <li>Inferno doesn't have a fully synthetic event system like React does. Inferno has a partially synthetic event system, instead opting to only delegate certain events (such as `onClick`).</li>
+      <li>Inferno doesn't support React Native. Inferno was only designed for the browser/server with the DOM in mind.</li>
+      <li>Inferno doesn't support legacy string refs, use `createRef` or callback `ref` API</li>
+      <li>Inferno provides lifecycle events on functional components. This is a major win for people who prefer lightweight components rather than ES2015 classes.</li>
+      <li>Inferno is able to use the React Dev Tools extensions for Chrome/Firefox/etc to provide the same level of debugging experience to the Inferno user via `inferno-devtools`.</li>
+      <li>Inferno styles are set using CSS property names [background-color: blue] rather than [backgroundColor: blue]. camelCase styles are supported through inferno-compat package.</li>
+    </ul>
+  </p>
+  <p>
+    2.配套库
+    <ul>
+      <li>Core packages: </br>npm install --save inferno</li>
+      <li>Compatibility with existing React apps: </br>npm install --save-dev inferno-compat</li>
+      <li>Routing support: </br>npm install --save inferno-router</li>
+      <li>Installing a virtual DOM package: JSX</br>npm install --save-dev babel-plugin-inferno</li>
+      <li>Installing a virtual DOM package: Hyperscript(还不确定具体用途,是否有必要使用)</br>npm install --save inferno-hyperscript</li>
+      <li>Installing a virtual DOM package: createElement(还不确定具体用途,是否有必要使用)</br>npm install --save inferno-create-element</li>
+    </ul>
+  </p>
+  <p></p>
+</body>
+
+</html>

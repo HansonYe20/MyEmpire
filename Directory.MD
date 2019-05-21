@@ -3,12 +3,15 @@
 #工程创建
 
 a.基础框架搭建, 技术选型
-1.git init
-2.npm init
+0.webpack组织
+1.git init ✅
+2.npm init ✅
 3.es6
-4.react/inferno/angular/vue
+4.react/inferno/angular/vue/...
 5.ts
 6.css
+7.hbs 模板
+8.tslint/eslint
 
 b.框架常用解决方案搭建
 1.pc和移动端选型(或者直接响应式), viewpoint
@@ -24,6 +27,10 @@ b.框架常用解决方案搭建
 11.兼容性
 12.seo
 13.埋点
+14.监控/分析
+15.字符编码
+16.国际化
+17.polyfill
 
 #帮助
 1.cli开发
@@ -32,18 +39,22 @@ b.框架常用解决方案搭建
 4.npm插件开发(link 协同)
 5.chrome插件开发
 6.node中间件开发
+7.vscode插件开发
+8.loader开发(webpack)
+9.plugins开发(webpack)
 
 #具体问题解决方案
 1.类/方法修饰器
 2.各种文件上传/操作
 3.ssl
 4.数据库
+5.图表(饼图, 立体图...)
 
 #辅助解决问题
 1.抓包
 2.调试
 3.vscode
-
+4.postman
 
 
 #其他
@@ -53,7 +64,6 @@ native
 react-native
 爬虫
 站内搜索
-
 
 
 #####需要的储备#####
@@ -66,4 +76,29 @@ error/excpetion
 拖拽
 滚动
 动画
+动画设计原理, 16ms, 缓动函数等
 画布
+源码
+babel
+redux
+unix
+zepto
+jquery源码
+图片/视频处理/识别
+算法
+http协议
+实时通讯, socket
+js基础
+shell
+node_modules
+require
+bridge
+buddle.js map
+内网穿透
+nginx
+easyUI/amzingUI...
+mocha
+日历
+钩子函数/回调函数区别
+字体/服务端导入, woff, @font-face
+node环境区分
