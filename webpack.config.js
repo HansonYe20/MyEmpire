@@ -3,6 +3,8 @@ const path = require('path');
 
 // const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const isProdEnv = false;
+const transformInferno = require('ts-transform-inferno').default
+const transformClasscat = require('ts-transform-classcat').default
 
 /**
  * webpack配置大全
@@ -15,8 +17,13 @@ module.exports = {
       exclude: /node_modules/
     }, {
       test: /\.tsx?$/,
-      use: 'ts-loader',
-      exclude: /node_modules/
+      loader: 'ts-loader',
+      // options: { silent: true, transpileOnly: true }
+      options: {
+        getCustomTransformers: () => ({
+          before: [transformClasscat(), transformInferno()],
+        }),
+      },
     }, {
       test: /\.js$/,
       include: [path.resolve(__dirname, 'src')],
@@ -49,7 +56,8 @@ module.exports = {
   },
 
   entry: {
-    index: './src/index/view/index.ts'
+    // index: './src/index/view/index.tsx'
+    index: './src/index/index.tsx'
     // index: './baseTec/ts/e-ts.ts'
   },
 
