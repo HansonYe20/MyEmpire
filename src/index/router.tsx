@@ -1,15 +1,7 @@
-import { Router, Switch, Route, BrowserRouter, HashRouter } from 'inferno-router';
-// import createHashHistory from 'history/createHashHistory';
-import createHashHistory from 'history/createBrowserHistory';
+import { Switch, Route, BrowserRouter, HashRouter } from 'inferno-router';
 import ViewIndex from './view/index';
 import ViewSecond from './view/second';
 
-
-// export default (
-//   <Router>
-//     <Route exact path="/" component={ViewIndex} />
-//   </Router>
-// );
 
 export default (
   <HashRouter>

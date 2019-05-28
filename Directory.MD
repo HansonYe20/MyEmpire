@@ -3,15 +3,18 @@
 #工程创建
 
 a.基础框架搭建, 技术选型
-0.webpack组织
+0.webpack组织 ✅
 1.git init ✅
 2.npm init ✅
-3.es6
-4.react/inferno/angular/vue/...
-5.ts
-6.css
+3.es6 ✅
+4.react/inferno/angular/vue/... ✅(仅仅inferno, router)
+5.ts ✅
+6.less ✅
 7.hbs 模板
 8.tslint/eslint
+9.mock
+10.axios
+11.结构布局
 
 b.框架常用解决方案搭建
 1.pc和移动端选型(或者直接响应式), viewpoint
@@ -33,8 +36,14 @@ b.框架常用解决方案搭建
 17.polyfill
 
 #帮助
-1.cli开发
-2.项目级utils开发
+1.项目级开发
+  (1)utils
+  (2)components
+   --Scroller
+   --viewpoint
+   --fastclick
+   ...
+2.cli开发
 3.浏览器插件开发(油猴等)
 4.npm插件开发(link 协同)
 5.chrome插件开发
@@ -103,4 +112,13 @@ mocha
 字体/服务端导入, woff, @font-face
 node环境区分
 
-@type类型 ?
+1.@type类型 ?
+
+
+
+todo
+1.baseComponent
+2.router
+3.模板文件
+4.node服务器
+5.keys为什么是有必要的
