@@ -10,11 +10,14 @@ a.基础框架搭建, 技术选型
 4.react/inferno/angular/vue/... ✅(仅仅inferno, router)
 5.ts ✅
 6.less ✅
-7.hbs 模板
+7.模板 ✅
 8.tslint/eslint
 9.mock
 10.axios
 11.结构布局
+  (1)多入口编译成不同输出✅
+  (2)mock等...
+  (3)模板等...
 
 b.框架常用解决方案搭建
 1.pc和移动端选型(或者直接响应式), viewpoint
@@ -122,3 +125,16 @@ todo
 3.模板文件
 4.node服务器
 5.keys为什么是有必要的
+6.基于路由的代码分割
+7.实例
+8.tsc 编译报错: 'rootDir' is expected to contain all source files.
+9.node_modules @
+10.接入ts
+
+11.组件的绝对宽高, 避免flex兼容性问题
+12.svg
+13.虚拟键盘
+
+
+生成模块代码
+根据编译时指定的模块目标参数，编译器会生成相应的供Node.js (CommonJS)，Require.js (AMD)，UMD，SystemJS或ECMAScript 2015 native modules (ES6)模块加载系统使用的代码。 想要了解生成代码中 define，require 和 register的意义，请参考相应模块加载器的文档。

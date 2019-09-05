@@ -57,14 +57,18 @@ module.exports = {
 
   entry: {
     // index: './src/index/view/index.tsx'
-    index: './src/index/index.tsx'
+    // index: './src/index/index.tsx'
     // index: './baseTec/ts/e-ts.ts'
+    index: './src/index/index.tsx',
+    index2: './src/index2/index.tsx',
   },
 
   output: {
     // filename: '[name].[chunkhash].js',
     filename: '[name].js',
-    path: path.resolve(__dirname, './dist')
+    // path: path.resolve(__dirname, './dist')
+    // path: "/home/proj/cdn/assets/[hash]",
+    path: path.resolve(__dirname, './dist', './module')
   },
 
   resolve: {
@@ -115,7 +119,7 @@ module.exports = {
   // "dev": "webpack-dev-server --devtool eval --progress --colors --hot --content-base dist"
   devServer: {
     proxy: { // proxy URLs to backend development server
-      '/api': 'http://localhost:6666'
+      '/api': 'http://me.ly.com:8080' // localhost
     },
     contentBase: path.join(__dirname, 'dist'), // boolean | string | array, static file location
     compress: true, // enable gzip compression
